@@ -3,7 +3,7 @@
         <div class="container">
             <div class="left">
                 <div class="col-1">
-                    <router-link class="header" :to="{ name: 'home' }">Writing Blog</router-link>
+                    <router-link class="header" :to="{ name: 'Home' }">Writing Blog</router-link>
                     <ul>
                         <li>
                             <a href="#">
