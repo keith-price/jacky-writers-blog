@@ -87,7 +87,7 @@ export default {
     }
 }
 
-.button,
+button,
 .router-button {
     transition: .5s ease all;
     cursor: pointer;

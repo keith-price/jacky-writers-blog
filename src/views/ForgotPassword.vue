@@ -1,5 +1,6 @@
 <template>
     <div class="reset-password">
+        <Modal v-if="modalActive" v-on:close-modal="closeModal" />
         <div class="form-wrap">
             <form class="reset">
                 <h2 class="reset-password">Reset Password</h2>
@@ -20,14 +21,24 @@
 
 <script>
 import email from "../assets/Icons/envelope-regular.svg";
+import Modal from "../components/Modal.vue";
 export default {
     name: "ForgotPassword",
     components: {
         email,
+        Modal
     },
     data() {
         return {
-            email: null
+            email: null,
+            modalActive: null,
+            modalMessage: "",
+        }
+    },
+    methods: {
+        closeModal() {
+            this.modalActive = !this.modalActive;
+            this.email = ""
         }
     }
 
