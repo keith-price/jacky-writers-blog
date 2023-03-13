@@ -43,6 +43,7 @@ export default {
 }
 </script>
 
+<!-- these styles aren't scoped so they can be used in the register view/component also-->
 <style lang="scss">
 .form-wrap {
     overflow: hidden;
